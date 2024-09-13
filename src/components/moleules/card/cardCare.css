@@ -1,0 +1,74 @@
+/* General styles */
+/* Styles for the card container */
+.care {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  padding: 20px;
+  box-sizing: border-box; /* Ensures that padding does not affect the overall width */
+}
+
+.care-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.care-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.care-description {
+  font-size: 1.2rem;
+  color: #333; 
+  margin-bottom: 20px;
+}
+
+.care-cards {
+  display: grid;
+  gap: 20px; 
+  grid-template-columns: repeat(2, 1fr); /* Two columns on mobile devices */
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+/* Styles for cards */
+.care-card {
+  background-color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;/* Smooth transition */
+  box-sizing: border-box; 
+}
+
+.care-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.icon {
+  font-size: 3rem; 
+  margin-bottom: 10px;
+}
+
+.care-card h2 {
+  font-size: 1.2rem;
+  color: #333; 
+}
+
+/* Styles for large screens (desktop) */
+@media (min-width: 768px) {
+  .care-cards {
+  grid-template-columns: repeat(3, 1fr);/* Three columns on large screens */
+   width: 60%;
+  }
+
+}

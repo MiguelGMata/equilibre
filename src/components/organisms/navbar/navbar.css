@@ -1,0 +1,210 @@
+/* General styles for the Navbar */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  background-color: rgba(249, 198, 201, 0.8); 
+  border-bottom: 1px solid #ddd; 
+  z-index: 1000;/* Make sure the navbar is on top of other elements */
+}
+
+/* Navbar content */
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+}
+
+
+.logo img {
+  width: 10vw; 
+}
+
+/* Mobile burger button */
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5vw;
+  gap: 5px;
+  transition: transform 0.3s ease; 
+}
+
+.burger-line {
+  width: 30px;
+  height: 3px;
+  background-color: #333; 
+  border-radius: 5px;
+  transition: all 0.3s ease; 
+}
+
+/* Burger button when menu is open */
+.burger.open .burger-line:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: 3px 3px;
+}
+
+.burger.open .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open .burger-line:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: 3px -3px;
+}
+
+/* Mobile dropdown menu styles */
+.menu {
+  position: absolute;
+  top: 100px; 
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 10px 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+  opacity: 0;
+  transform: translateY(-20px); 
+  visibility: hidden;
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.menu.show {
+  opacity: 1;
+  transform: translateY(0); 
+  visibility: visible;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  text-transform: uppercase; 
+  transition: color 0.3s ease; 
+}
+
+
+.menu a:hover {
+  color: #ff00ff; 
+  font-weight: bold;
+}
+
+/* Style for the active link in the menu */
+.menu ul li a.active {
+  color: #ff00ff; 
+  font-weight: bold; 
+}
+
+/* Styles for social media links and the Mentions légales link */
+.social-links {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.social-links a {
+  font-size: 30px;
+  margin: 5px 0; 
+}
+
+.legal {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.legal a {
+  text-decoration: none;
+  color: #333; 
+}
+
+/* Styles for large screens */
+@media (min-width: 768px) {
+  .navbar {
+    width: 80px;
+    height: 100vh; 
+    background-color: rgba(249, 198, 201, 0.2); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: fixed; 
+    left: 0;
+    transition: width 0.5s ease; 
+    overflow: hidden; 
+  }
+
+  .navbar:hover {
+    display: flex;
+    width: 300px; 
+  }
+
+  .navbar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;  
+    padding: 20px 0;  
+  }
+
+  .burger {
+    display: none; 
+  }
+
+  .menu {
+    position: static;  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: none;  
+    margin-top: 20px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;  
+    background-color: #333;
+  }
+  .menu:hover {
+    display: flex;
+    background-color: #fff;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu li {
+    margin: 15px 0;
+  }
+
+  .social-links {
+    margin-top: auto;    
+  }
+
+  .separator {
+    background-color: #333;
+    height: 2px;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    opacity: none;
+  }
+}

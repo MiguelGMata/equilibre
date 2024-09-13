@@ -1,0 +1,113 @@
+/* General styles */
+.card-feng {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .text-container {
+    display: flex;
+    align-items: flex-start; /* Align title and bar to start */
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    color: black;
+    text-align: justify;
+    margin-left: 5vw; /* Espacio entre el título y la barra */
+    max-width: 80%; /* Ajusta según sea necesario */
+    flex: 1; /* Permite que el título ocupe el espacio restante */
+  }
+  
+  .growth-bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+  }
+  
+  .growth-bar {
+    background-color: #ddd;
+    height: 200px; 
+    width: 10px; 
+    border-radius: 5px;
+    position: relative;
+    margin-left: 2vw;
+    margin-top: 1.5vh;
+  }
+  
+  .growth-bar::before {
+    content: '';
+    display: block;
+    background-color: #4caf50; 
+    height: 0%;/* Start with empty bar */
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;/* Aligns the bar to the bottom of the container */
+    animation: growShrink 5s infinite; /* Growing and shrinking animation */
+  }
+  
+/* Animation for the infinite bar effect */
+  @keyframes growShrink {
+    0% {
+      height: 0%;
+    }
+    50% {
+      height: 100%;
+    }
+    100% {
+      height: 0%;
+    }
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #666; 
+    margin-top: 20px;
+  }
+
+  .container-img{
+    background-image: url("https://ik.imagekit.io/logoMGM/EquilibreVitelite/fengshui.gif?updatedAt=1726170927995");
+    width: 50%;
+    height: 20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+/* Styles for large screens */
+  @media (min-width: 768px) {
+    .card-title {
+      font-size: 1.5rem;
+    }
+  
+    .card-description {
+      font-size: 1.2rem;
+    }
+  
+    .growth-bar {
+      height: 150px; 
+    }
+  
+    .growth-bar::before {
+      height: 70%; 
+    }
+    .container-img{
+        height: 40vh;      
+      }
+  }
+  

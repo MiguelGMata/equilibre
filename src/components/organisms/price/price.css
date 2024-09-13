@@ -1,0 +1,70 @@
+/* Estilos generales para el componente Price */
+.price {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  text-align: center;
+}
+
+.price-title {
+  font-size: 2rem;
+  margin: 100px 0px;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns in mobile-first */       
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.price-card {
+  background-color: #fff;  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  position: relative; /* Required for inner shadow effect */
+  overflow: hidden;  
+}
+
+.price-card:hover {
+  transform: scale(1.2);  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.price-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.price-card-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.price-card-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Four divisions in two columns */
+  gap: 10px;
+}
+
+.price-card-detail {
+  background-color: rgba(249, 198, 201, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Styles for large screens (desktop) */
+@media (min-width: 768px) {
+  .price-grid {
+    grid-template-columns: repeat(4, 1fr);/* Four columns on large screens */
+  }
+  .price-title {
+    font-size: 3rem;
+  }
+  
+}

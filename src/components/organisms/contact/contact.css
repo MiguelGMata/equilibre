@@ -1,0 +1,67 @@
+/* General styles for the contact component */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contact-content {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+/* Styles for contact cards */
+  .contact-card {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+/* Styles for contact information */
+  .contact-info {
+    text-align: left;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .info-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+/* Styles for large screens */
+  @media (min-width: 768px) {
+    .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-left: -30vw;
+    }
+    .contact-content {
+      justify-content: right;
+      margin-right: 5vw;
+    }
+    .contact-card {
+      text-align: left;
+      width: 100%;
+    }
+    .contact-logo {
+      margin-left: 2.5vw;
+    }
+  }
+  

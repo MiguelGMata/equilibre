@@ -1,0 +1,52 @@
+/* General styles */
+/* Styles for the communication */
+.communication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+  
+ /* Content container */
+  .communication-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+
+  .communication-title {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+
+  .communication-subtitle {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+
+  .communication-paragraph {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+  }
+  
+/* Styles for larger screens */
+  @media (min-width: 768px) {
+    .communication-title {
+      font-size: 2.5rem;
+    }
+  
+    .communication-subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .communication-paragraph {
+      font-size: 1.2rem;
+    }
+  }
+  

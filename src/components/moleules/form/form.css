@@ -1,0 +1,63 @@
+/* General styles */
+/* General styles of the form container */
+.form-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 50px;
+    background: rgba(255, 192, 203, 0.3); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+  }
+  
+/* Form title styles */
+  .form-title {
+    text-align: center;
+    color: #ff69b4; 
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+/* General styles for form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+/* Form label styles */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+/* Input field styles */
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+/* Submit Button Styles */
+  .submit-button {
+    background-color: #ff69b4; 
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+ /* Hover effect on submit button */
+  .submit-button:hover {
+    background-color: #ff1493; 
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,42 @@
+.error-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.error-content {
+  flex: 1;
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url(https://i.pinimg.com/564x/a7/b3/80/a7b380814594af9221d45316ab8bcdd9.jpg);
+  background-repeat:no-repeat;
+}
+
+.error-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+.error-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.error-content a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ff6b6b;
+  transition: background-color 0.3s;
+}
+
+.error-content a:hover {
+  background-color: #007bff;
+  color: white;
+}

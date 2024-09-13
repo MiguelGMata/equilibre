@@ -1,0 +1,61 @@
+/* Styles for the Home component */
+.home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('../../../assets/images/logofondo.png') no-repeat center center/cover; 
+    background-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .home-content {
+    text-align: center;
+    color: black;
+    padding: 20px;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .home-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff00ff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #cc00cc; 
+  }
+  /* Styles for large screens */
+  @media (min-width: 768px) {
+    .home {
+        background-size: 30%;
+    }
+    .home-title {
+      font-size: 2.5rem;
+    }
+  
+    .home-description {
+      font-size: 1.25rem;
+    }
+  
+    .home-button {
+      font-size: 1.25rem;
+    }
+  }
+  

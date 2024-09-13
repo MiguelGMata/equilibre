@@ -1,0 +1,34 @@
+/* General styles */
+/* Styles for the care container */
+.care-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  z-index: 2; /* Make sure it is above the video */
+}
+
+.care-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+  }
+  
+.care-description {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .care-title {
+    font-size: 3rem;
+    }
+    .care-description {
+    font-size: 1.5rem;
+  } 
+}

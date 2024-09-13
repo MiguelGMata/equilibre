@@ -1,0 +1,53 @@
+/* General styles for the fengshui component */
+.fengshui {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  .fengshui-content{
+   width: 90%;
+  }
+  
+  .fengshui-title {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .fengshui-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  .fengshui-description {
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  
+/* Styles for large screens */
+  @media (min-width: 768px) {
+    .fengshui-content{
+      width: 60%;
+     }
+    .fengshui-title {
+      font-size: 2.5rem;
+    }
+  
+    .fengshui-subtitle {
+      font-size: 1.5rem;
+    }
+  
+    .fengshui-description {
+      font-size: 1.2rem;
+    }
+  }
+  
