@@ -5,6 +5,7 @@
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
+    padding-top: 10vh;
     overflow-x: hidden; /* Prevent horizontal overflow */
   }
   .fengshui-content{

@@ -72,7 +72,7 @@ const Navbar = () => {
               onClick={() => handleClick('comunication')}
               className={activeSection === 'comunication' ? 'active' : ''}
             >
-              Animeux
+              ANIMAUX
             </a>
           </li>
           <li>
