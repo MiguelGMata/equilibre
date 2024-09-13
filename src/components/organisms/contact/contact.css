@@ -42,6 +42,9 @@
     margin-right: 10px;
     font-size: 1.5rem;
   }
+  .form-component{
+    width: 100%;
+  }
   
 /* Styles for large screens */
   @media (min-width: 768px) {

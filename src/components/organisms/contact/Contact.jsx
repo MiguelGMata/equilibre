@@ -33,7 +33,9 @@ const Contact = () => {
           <p>Du lundi au vendredi : 9h - 18h<br/>Samedi : 10h - 14h<br/>Dimanche : Fermé</p>
         </div>
       </div>
+    <div className="form-component">
       <Form/>
+    </div>
     </section>
   );
 };
