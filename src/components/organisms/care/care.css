@@ -12,13 +12,13 @@
 .care-title {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: black;
+    color: #ffff;
     text-align: center;
   }
   
 .care-description {
   font-size: 1.2rem;
-  color: black;
+  color: #ffff;
   margin-bottom: 20px;
   text-align: center;
 }

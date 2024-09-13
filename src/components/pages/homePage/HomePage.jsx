@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../../../assets/images/video.mp4';
+import video from '../../../assets/images/video-2.mp4';
 import Home from '../../organisms/home/Home';
 import Care from '../../organisms/care/Care';
 import Comunication from '../../organisms/comunication/Comunication';

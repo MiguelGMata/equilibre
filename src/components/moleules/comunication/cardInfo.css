@@ -25,18 +25,19 @@
   
   .card-info-title {
     font-size: 1.5rem;
-    color: #333;
+    color: #000;
     text-align: center;
   }
   .card-info-title-2 {
     font-size: 1rem;
-    color: #333;
+    color: #000;
     text-align: center;
   }
   .card-info-description {
     font-size: 1rem;
-    color: #555;
+    color: #000;
     text-align: justify;
+    font-weight: bold;
   }
   
 /* Styles for large screens (desktop) */

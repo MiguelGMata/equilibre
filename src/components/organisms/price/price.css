@@ -8,6 +8,7 @@
 .price-title {
   font-size: 2rem;
   margin: 100px 0px;
+  color: #fff;
 }
 
 .price-grid {
@@ -37,11 +38,12 @@
 .price-card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #000;
 }
 
 .price-card-description {
   font-size: 1rem;
-  color: #666;
+  color: #000;
   margin-bottom: 20px;
 }
 

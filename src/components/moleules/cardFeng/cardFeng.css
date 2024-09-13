@@ -26,13 +26,16 @@
   
   .card-title {
     font-size: 1.2rem;
-    color: black;
+    color: #ffff;
     text-align: justify;
     margin-left: 5vw; /* Espacio entre el título y la barra */
     max-width: 80%; /* Ajusta según sea necesario */
     flex: 1; /* Permite que el título ocupe el espacio restante */
   }
-  
+  .card-content p {
+    color: #ffff;
+    font-weight: bold;
+  }
   .growth-bar-container {
     display: flex;
     flex-direction: column;

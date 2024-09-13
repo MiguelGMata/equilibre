@@ -13,7 +13,7 @@
   
   .fengshui-title {
     font-size: 1.8rem;
-    color: black;
+    color: #ffff;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -21,14 +21,14 @@
   .fengshui-subtitle {
     text-align: center;
     font-size: 1.2rem;
-    color: black;
+    color: #ffff;
     margin-bottom: 15px;
   }
   
   .fengshui-description {
     text-align: center;
     font-size: 1rem;
-    color: black;
+    color: #ffff;
     line-height: 1.5;
     padding: 0 10px;
   }

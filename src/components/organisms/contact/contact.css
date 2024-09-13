@@ -20,6 +20,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     text-align: center;
+    color: #fff;
+  }
+  .contact-card h2{
+    color: #fff;
   }
   
   .contact-logo {
