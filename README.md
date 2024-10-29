@@ -52,12 +52,10 @@ Navigation fluide grâce à ReactJS et la gestion de l'état local pour contrôl
 En résumé, la One Page "Équilibre & Vitalé" est un site moderne, intuitif et élégant, conçu pour offrir une expérience utilisateur agréable tout en mettant en avant les services énergétiques et le bien-être.
 
 
-![Capture d’écran 2024-09-13 à 12 21 34](https://github.com/user-attachments/assets/f0b913e9-58c4-4a86-8b0f-b155a5bb813c)
-
-![Capture d’écran 2024-09-13 à 12 24 12](https://github.com/user-attachments/assets/0e1e3dad-92d4-459b-b7e4-171d515525ff)
+<a href="https://ik.imagekit.io/"><img src="https://ik.imagekit.io/logoMGM/EquilibreVitelite/equilbre.png?updatedAt=1726721124636"></a>
 
 
-**_Extructuras de Carpetas _**
+**_Extructures _**
 /src
 ├── /assets
 │ ├── /images
